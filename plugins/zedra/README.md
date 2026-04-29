@@ -16,6 +16,7 @@ claude --plugin-dir ./plugins/zedra
 # (inside a Claude Code session)
 /plugin marketplace add tanlethanh/zedra
 /plugin install zedra@zedra
+/reload-plugins
 ```
 
 ### Codex / OpenCode
@@ -34,14 +35,14 @@ opencode --add-dir ./plugins/zedra
 
 ## Usage
 
-Plugin skills are namespaced by the plugin name in Claude Code:
+Plugin skills can be run directly in Claude Code:
 
 | Command | What it does |
 |---------|-------------|
-| `/zedra:zedra-start` | Check install, launch daemon, print QR |
-| `/zedra:zedra-status` | Show daemon status |
-| `/zedra:zedra-stop` | Stop the daemon |
-| `/zedra:zedra-terminal` | Open a terminal on the connected phone |
+| `/zedra-start` | Check install, launch daemon, print QR |
+| `/zedra-status` | Show daemon status |
+| `/zedra-stop` | Stop the daemon |
+| `/zedra-terminal` | Open a terminal on the connected phone |
 
 ## Skills
 

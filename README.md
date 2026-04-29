@@ -19,8 +19,9 @@ zedra start
 # Inside Claude Code session
 /plugin marketplace add tanlethanh/zedra-plugin
 /plugin install zedra@zedra
-# Restart Claude Code session and start Zedra
-/zedra:zedra-start
+# Reload plugins and start Zedra
+/reload-plugins
+/zedra-start
 ```
 
 **Codex**

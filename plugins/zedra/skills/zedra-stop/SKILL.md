@@ -1,27 +1,25 @@
 ---
 name: zedra-stop
-description: Stop the running Zedra Host daemon. Use when the user wants to shut down zedra, stop the daemon, or disconnect.
+description: Stop Zedra for the current workspace.
 disable-model-invocation: true
 allowed-tools: Bash
 argument-hint: "[--workdir PATH]"
 ---
 
-# Stop Zedra Host
+# Stop Zedra
 
-Stop the running Zedra Host daemon for the current workspace.
-
-## Step 1 — Confirm status before stopping
+Check the current daemon:
 
 ```bash
 zedra status --workdir "." 2>&1
 ```
 
-If no daemon is running, inform the user and stop.
+If no daemon is running, tell the user and stop.
 
-## Step 2 — Stop the daemon
+Otherwise stop it:
 
 ```bash
 zedra stop --workdir "."
 ```
 
-Report whether the stop was successful.
+Reply with whether the daemon stopped successfully.
